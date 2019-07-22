@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Happy Monkey', cursive;
+}
+
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/road.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    padding: 15px 15px;
+}
+
+li:hover {
+    background: rgba(1,1,1, .6);
+}
+
+#panel {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: rgba(0,0,0, .6);
+    color: #fff;
+}
+
+#panel h1 {
+    padding: 15px 0 0 15px;
+}
+
+#todo-list .checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background:#eee;
+    cursor: pointer;
+}
+
+
+#todo-list .content {
+    padding-left: 15px;
+    flex: 1;
+}
+
+#todo-list .delete {
+    padding: 0 10px;
+    color: red;
+    cursor: pointer;
+}
+
+#todo-list .col-1.actions {
+    padding-right: 0;
+}
+
+#todo-list li.complete {
+    text-decoration: line-through;
+}
+
+#todo-list li.complete .checkbox {
+    background: #000;
+}
+
